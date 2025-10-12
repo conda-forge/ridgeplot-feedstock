@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ridgeplot
-  version: 0.4.0
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ridgeplot-${{ version }}.tar.gz
-  sha256: 05361a6fee10c819a803b4837da64a87b776d8a9d3684001c597738b80e1c45c
+  sha256: 3209782dcea206de7fed35b54d1dd76d37dfaf2f3e77cf1048581916dd55d11f
 
 build:
   number: 0
