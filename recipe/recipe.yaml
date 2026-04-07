@@ -35,7 +35,9 @@ tests:
       imports:
         - ridgeplot
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Provides a simple interface for plotting beautiful and interactive ridgeline plots within the extensive Plotly ecosystem.
