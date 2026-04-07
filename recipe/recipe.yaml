@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ridgeplot
-  version: "0.5.0"
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ridgeplot-${{ version }}.tar.gz
-  sha256: 3209782dcea206de7fed35b54d1dd76d37dfaf2f3e77cf1048581916dd55d11f
+  sha256: d810606a12c279fa8d25f7cd2bb6772a73dec68e611044d68b18622c26440b2b
 
 build:
   number: 0
@@ -35,7 +35,9 @@ tests:
       imports:
         - ridgeplot
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Provides a simple interface for plotting beautiful and interactive ridgeline plots within the extensive Plotly ecosystem.
